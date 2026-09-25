@@ -53,7 +53,7 @@ For each check you implemented, write how you would do it in Python and how you 
 
 1. Why is `latencyMs: 0` a trap for code such as `if (!raw.latencyMs) return null;`?
 
-   > your answer
+   > latencyMs: 0 is a valid value but JavaScript treats 0 as falsy. This means if (!raw.latencyMs) would incorrectly reject a latency of 0 even tho it should be allowed.
 
 2. Your function builds a **new** object and ignores fields like `isAdmin`. Describe in two or three sentences what could go wrong later in an application that copied **every** field it received.
 
