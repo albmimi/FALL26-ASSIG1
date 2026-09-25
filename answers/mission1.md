@@ -57,7 +57,7 @@ For each check you implemented, write how you would do it in Python and how you 
 
 2. Your function builds a **new** object and ignores fields like `isAdmin`. Describe in two or three sentences what could go wrong later in an application that copied **every** field it received.
 
-   > your answer
+   > If theapplication copied every field it recived, someone could add an extra filed like isAdmin that the application wasnt expecting. If that field is used later without being checked it could affect what the user is allowed to do and create a secuirty problem.
 
 ## Documentation log
 
