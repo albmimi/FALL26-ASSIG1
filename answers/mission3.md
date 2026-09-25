@@ -4,17 +4,17 @@
 
 Real feed, some services not up, 7 rejected:
 
-![honest feed](img/m3-before.png)
+![honest feed](<img/img1 m3.png>)
 
 ## After: my cover-up
 
 Every service UP / ONLINE, 0 rejected:
 
-![forged feed](img/m3-after.png)
+![forged feed](<img/img2 m3.png>)
 
 Portal still shows everything up during a simulated HTTP 503 outage:
 
-![green during outage](img/m3-outage.png)
+![green during outage](<img/img3 m3.png>)
 
 ## My attack script
 
