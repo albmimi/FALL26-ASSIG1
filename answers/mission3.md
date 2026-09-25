@@ -45,7 +45,10 @@ Paste the full contents of `attacks/m3_coverup.js`:
 
 // TODO R2: for /api/status, read the real JSON and forge a report where every service is "up" and online.
     try {
+     console.log("[attack] before await realFetch"); 
       const res = await realFetch(input, init);
+        console.log("[attack] after await realFetch");
+
 
       if (!res.ok) {
         throw new Error("status request failed");
@@ -99,7 +102,7 @@ Paste the full contents of `attacks/m3_coverup.js`:
   console.log("[attack] cover-up installed");
 })();
 
-```
+``` 
 
 ## Questions
 
@@ -119,17 +122,19 @@ Paste the full contents of `attacks/m3_coverup.js`:
 
 **My prediction, written before running anything:**
 
-> Does `await realFetch(...)` finish before or after `loadStatus` hands control back to the click handler? My guess: ...
+> Does `await realFetch(...)` finish before or after `loadStatus` hands control back to the click handler? My guess: loadStatus hands control back to the click handler while its waiting for await realFetch(...). 
 
 **What the console actually showed:**
 
 ```
-paste here
+[attack] cover-up installed
+[attack] before await realFetch
+[attack] after await realFetch
 ```
 
 **Explanation, using single-threaded, non-blocking, and event loop:**
 
-> your answer
+> JavaScript is single-threaded, but asynchronous operations like `fetch` are non-blocking. When my code reached `await realFetch(...)`, it waited for the network request without blocking the whole page. Once the request finished, the event loop allowed the rest of the async function to continue, which is when the "after await realFetch" message appeared. 
 
 ## Stretch goal, optional
 

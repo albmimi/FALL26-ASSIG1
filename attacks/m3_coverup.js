@@ -22,7 +22,10 @@
 
 // TODO R2: for /api/status, read the real JSON and forge a report where every service is "up" and online.
     try {
+     console.log("[attack] before await realFetch"); 
       const res = await realFetch(input, init);
+        console.log("[attack] after await realFetch");
+
 
       if (!res.ok) {
         throw new Error("status request failed");
