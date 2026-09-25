@@ -4,12 +4,13 @@
 
 The button dodges (two positions), with my attacker counter visible:
 
-![position 1](img/m2-pos1.png)
-![position 2](img/m2-pos2.png)
+![position 1](<img/img1 m2.png>)
+![position 2](<img/img2 m2.png>) 
+
 
 A legitimate click does nothing after my attack (log still reads "No purge requested"):
 
-![click does nothing](img/m2-click.png)
+![click does nothing](<img/img3 m2.png>) 
 
 ## My attack script
 
