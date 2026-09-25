@@ -96,7 +96,7 @@ Paste the full contents of `attacks/m2_runaway.js`, with one sentence per block:
 
 ## Creativity: my twist, R5
 
-> your answer
+> I chnaged the button text to "Mayan is coming for you" when the user approaches it. I thought it was funny to say that even tho its running away from the user. 
 
 ## Think like a defender
 
