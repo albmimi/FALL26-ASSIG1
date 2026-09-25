@@ -55,7 +55,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 3. **Connections:** in one or two sentences, what is the difference between a **fork** and a **clone**? Which one lives on GitHub and which one lives on your machine?
 
-   > your answer
+   > A fork makes my own copy of the repository on GitHub. A clone takes that repository from GitHub and makes a copy on my computer so I can work on it. 
 
 ## Documentation log
 
