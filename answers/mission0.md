@@ -51,7 +51,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 2. What line or lines did you add to `.gitignore`? What does a trailing `/` mean in a `.gitignore` pattern?
 
-   > your answer
+   > I added node_modules/ to the .gitignore file. The / at the end means that node_modules is a folder, so Git will ignore that folder and the files inside it. 
 
 3. **Connections:** in one or two sentences, what is the difference between a **fork** and a **clone**? Which one lives on GitHub and which one lives on your machine?
 
