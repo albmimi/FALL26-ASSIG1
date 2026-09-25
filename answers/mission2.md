@@ -104,15 +104,15 @@ The mouse trick is theater. The real problem is that attacker code ran in the op
 
 1. Where must the actual protection live?
 
-   > your answer
+   > The actual protection must live on the server side casue the code in the browser can be cahnged by an attacker. 
 
 2. What should the server check on every purge request? Name at least two things.
 
-   > your answer
+   > The server should check that the user is authinticated and that they have permission to preform the purge. It should also validate the request before allowing the action. 
 
 3. Which Unit 1.3 slide or takeaway does this map to?
 
-   > your answer
+   > the takeaway is that the client-side checks are not enough for secuirty and important rules must be enforced on the server side. 
 
 ## Documentation log
 
